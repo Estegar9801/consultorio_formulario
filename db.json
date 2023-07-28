@@ -1,0 +1,30 @@
+{
+  "personas": [
+      {
+      "nombre": "Duban",
+      "apellido": "Patiño Lopez",
+      "edad": 0,
+      "tipo": "Doctor",
+      "cedula": "5297787845",
+      "fechaNacimiento": "1900/01/01",
+      "telefono": "2247785963",
+      "correo": "dpatinol@consultorio.com",
+      "especialidad": "Odontología",
+      "consultorio": "20",
+      "id": 12
+    },
+    {
+      "nombre": "Carlos Andrés",
+      "apellido": "Ramírez Carvajal",
+      "edad": 25,
+      "tipo": "Paciente",
+      "cedula": "26874123",
+      "fechaNacimiento": "1998-02-18",
+      "telefono": "3322004785",
+      "correo": "caramirezc@consultorio.com",
+      "especialidad": "Radiología",
+      "consultorio": 0,
+      "id": 13
+    }
+  ]
+}
