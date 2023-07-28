@@ -1,19 +1,19 @@
 const listaPersonas = (tipo) =>
-  fetch(`http://localhost:3000/personas/?tipo=${tipo}`).then((respuesta) => respuesta.json());
+  fetch(`https://raw.githubusercontent.com/Estegar9801/consultorio_formulario/main/db.json/personas/?tipo=${tipo}`).then((respuesta) => respuesta.json());
 
 const eliminarPersona = (id) => {
-  return fetch(`http://localhost:3000/personas/${id}`, {
+  return fetch(`https://raw.githubusercontent.com/Estegar9801/consultorio_formulario/main/db.json/personas/${id}`, {
     method: "DELETE",
   });
 };
 
 const detallePersona = (id) => {
-  return fetch(`http://localhost:3000/personas/${id}`,{
+  return fetch(`https://raw.githubusercontent.com/Estegar9801/consultorio_formulario/main/db.json/personas/${id}`,{
   }).then((response) => response.json())
 };
 
 const registrarPersona = ({nombre, apellido, edad, tipo, cedula, fechaNacimiento, telefono, correo, especialidad, consultorio}) => {
-  return fetch("http://localhost:3000/personas",{
+  return fetch("https://raw.githubusercontent.com/Estegar9801/consultorio_formulario/main/db.json/personas",{
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -23,7 +23,7 @@ const registrarPersona = ({nombre, apellido, edad, tipo, cedula, fechaNacimiento
 };
 
 const actualizarPersona = ({nombre, apellido, edad, tipo, cedula, fechaNacimiento, telefono, correo, especialidad, consultorio }, id) => {
-  return fetch(`http://localhost:3000/personas/${id}`, {
+  return fetch(`https://raw.githubusercontent.com/Estegar9801/consultorio_formulario/main/db.json/personas/${id}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
