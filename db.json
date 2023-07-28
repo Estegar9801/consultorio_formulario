@@ -1,5 +1,4 @@
 {
-  "personas": [
       {
       "nombre": "Duban",
       "apellido": "Patiño Lopez",
@@ -26,5 +25,4 @@
       "consultorio": 0,
       "id": 13
     }
-  ]
 }
