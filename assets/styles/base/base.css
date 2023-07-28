@@ -1,0 +1,11 @@
+@import url(_reset.css);
+@import url(_variables.css);
+
+body {
+    background-color: var(--color-Fondo);
+    font-family: var(--fuente-Principal);
+}
+
+.container {
+    width: vw;
+}

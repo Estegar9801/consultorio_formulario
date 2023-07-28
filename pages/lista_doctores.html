@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es-en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles/base/base.css">
+    <link rel="stylesheet" href="../assets/styles/components/header.css">
+    <link rel="stylesheet" href="../assets/styles/components/button.css">
+    <link rel="stylesheet" href="../assets/styles/components/lista_personas.css">
+    <title>Inicio</title>
+</head>
+
+<body style="text-align: center;">
+    <header class="header container">
+        <img class="header__logo" src="../assets/img/logo_medicina.png" alt="Logo-Consultorio">
+        <nav>
+            <ul class="header__list">
+                <li class="header__link"><a href="index.html">Inicio</a></li>
+                <li class="header__link"><a href="lista_pacientes.html">Pacientes</a></li>
+                <li class="header__link header__link--actual"><a href="#">Doctores</a></li>
+                <li class="header__link"><a href="#">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button class="form-button" onclick="registrarBoton(1)">Nuevo Doctor</button>
+    <section class="info-container" data-section>
+    </section>    
+    <script src="../js/components/lista.js"></script>
+    <script type="module" src="../js/controllers/doctor.controller.js"></script>
+</body>
+
+</html>

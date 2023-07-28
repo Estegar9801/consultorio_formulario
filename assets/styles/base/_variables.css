@@ -1,0 +1,8 @@
+:root {
+    --fuente-Principal: 'Montserrat', sans-serif;
+    --color-Fondo: #FAFAFA;
+    --color-Claro: rgb(25, 210, 152, 1);
+    --color-Oscuro: rgb(51, 73, 93, 1);
+
+    --color-Peligro: rgb(218, 60, 60);
+}

@@ -1,0 +1,42 @@
+.form{
+    width: vw;
+}
+
+.form__title{
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.form__card{
+    width: 50%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 25px auto;
+    padding: 25px;    
+    box-sizing: border-box;
+    border-radius: 20px;
+    outline: 4px solid var(--color-Oscuro);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);    
+}
+
+@media screen and (max-width: 576px) {
+    .form__card{
+        width: 90%;;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .form__card{
+        width: 80%;        
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form__card{
+        width: 90%;        
+    }
+}

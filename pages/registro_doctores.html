@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es-en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles/base/base.css">
+    <link rel="stylesheet" href="../assets/styles/components/header.css">
+    <link rel="stylesheet" href="../assets/styles/components/form.css">
+    <link rel="stylesheet" href="../assets/styles/components/input.css">
+    <link rel="stylesheet" href="../assets/styles/components/button.css">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <header class="header container">
+        <img class="header__logo" src="../assets/img/logo_medicina.png" alt="Logo-Consultorio">
+        <nav>
+            <ul class="header__list">
+                <li class="header__link"><a href="index.html">Inicio</a></li>
+                <li class="header__link"><a href="lista_pacientes.html">Pacientes</a></li>
+                <li class="header__link header__link--actual"><a href="lista_doctores.html">Doctores</a></li>
+                <li class="header__link"><a href="#">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="form">
+        <form class="form__card" data-form="Doctor">
+            <h3 class="form__title">Registro Doctor</h3>
+            <div class="input-container">
+                <label class="input-label">Nombre</label>
+                <input type="text" class="input-text" required placeholder="Nombre" data-tipo="nombre">
+                <span class="input-message-error"></span>
+            </div>
+            <div class="input-container">
+                <label class="input-label">Apellido</label>
+                <input type="text" class="input-text" required placeholder="Apellidos" data-tipo="apellido">
+                <span class="input-message-error"></span>
+            </div>
+            <div class="input-container">
+                <label class="input-label">Identificación</label>
+                <input type="text" class="input-text" required placeholder="Identificación" data-tipo="cedula">
+                <span class="input-message-error"></span>
+            </div>
+            <div class="input-container">
+                <label class="input-label">Correo</label>
+                <input type="email" class="input-text" required placeholder="Correo Electrónico" data-tipo="correo">
+                <span class="input-message-error">
+                </span>
+            </div>
+            <div class="input-container input__container-corto">
+                <label class="input-label">Teléfono</label>
+                <input type="number" class="input-text" required placeholder="Teléfono" data-tipo="telefono">
+                <span class="input-message-error"> </span>
+            </div>
+            <div class="input-container input__container-corto">
+                <label class="input-label">Consultorio</label>
+                <input type="number" class="input-text" required placeholder="consultorio" data-tipo="consultorio">
+                <span class="input-message-error"></span>
+            </div>
+            <div class="input-container">
+                <label class="input-label">Especialidad</label>
+                <select name="" id="" class="input-text" data-tipo="especialidad">
+                    <option value="Mediciona general" class="input-option">Medicina General</option>
+                    <option value="Cardiología" class="input-option">Cardiología</option>
+                    <option value="Dermatología" class="input-option">Dermatología</option>
+                    <option value="Rehabilitación" class="input-option">Rehabilitación</option>
+                    <option value="Mediciona interna" class="input-option">Mediciona interna</option>
+                    <option value="Psicología" class="input-option">Psicología</option>
+                    <option value="Odontología" class="input-option">Odontología</option>
+                    <option value="Radiología" class="input-option">Radiología</option>
+                </select>
+                </span>
+            </div>
+            <button class="form-button">Registrar</button>
+        </form>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+      integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="../js/controllers/registro.controller.js"></script>
+</body>
+
+</html>

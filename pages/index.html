@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es-en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles/base/base.css">
+    <link rel="stylesheet" href="../assets/styles/components/header.css">
+    <link rel="stylesheet" href="../assets/styles/components/slider.css">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <header class="header container">
+        <img class="header__logo" src="../assets/img/logo_medicina.png" alt="Logo-Consultorio">
+        <nav>
+            <ul class="header__list">
+                <li class="header__link header__link--actual"><a href="#">Inicio</a></li>
+                <li class="header__link"><a href="lista_pacientes.html">Pacientes</a></li>
+                <li class="header__link"><a href="lista_doctores.html">Doctores</a></li>
+                <li class="header__link"><a href="#">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="slider">
+        <span class="slider__arrow slider__arrow-left" onclick="desplazarImagen(-1)">&#10094</span>
+        <div class="slider-item" id="img-1">
+            <img src="../assets/img/deAvila_hospital.jpg" alt="Fachada Hospital Danpalon" class="slider__img">
+            <p class="slider__title">Hospital de Ávila - España</p>
+        </div>
+        <div class="slider-item" id="img-2">
+            <img src="../assets/img/general_espanha_hospital.jpg" alt="Fachada Hospital Danpalon" class="slider__img">
+            <p class="slider__title">Hospital General - México</p>
+        </div>
+        <div class="slider-item" id="img-3">
+            <img src="../assets/img/santisimo_rosario_centro.jpg" alt="Fachada Hospital Danpalon" class="slider__img">
+            <p class="slider__title">Hospital del Santisimo Rosario - Filipinas</p>
+        </div>
+        <div class="slider-item" id="img-4">
+            <img src="../assets/img/hospital_investigacion_california.jpg" alt="Fachada Hospital California" class="slider__img">
+            <p class="slider__title">Hospital de investigación - California</p>
+        </div>
+        <div class="slider-item" id="img-4">
+            <img src="../assets/img/sao_paulo_centro_medico.jpg" alt="Fachada Centro Medico Sau Paulo" class="slider__img">
+            <p class="slider__title">Centro médico de Sao Paulo - Brasil</p>
+        </div>
+        <span class="slider__arrow slider__arrow-right" onclick="desplazarImagen(1)">&#10095</span>
+    </section>
+    <div class="slider-navigation">
+        <span class="dot active" onclick="cambiarIndice(0)"></span>
+        <span class="dot" onclick="cambiarIndice(1)"></span>
+        <span class="dot" onclick="cambiarIndice(2)"></span>
+        <span class="dot" onclick="cambiarIndice(3)"></span>
+        <span class="dot" onclick="cambiarIndice(4)"></span>
+    </div>
+    <script src="../js/components/slider.js"></script>
+</body>
+
+</html>
